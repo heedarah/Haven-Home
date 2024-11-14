@@ -80,7 +80,14 @@ function SingleProduct() {
           </div>
           <button
             onClick={() => {
-              addItem({ id: product.id, ...product }, quantity);
+              addItem(
+                {
+                  ...product,
+                  id: product.id,
+                  price: parseInt(product.price.replace(/[^0-9]/g, "")),
+                },
+                quantity
+              );
               alert("Product added to cart");
             }}
             className="bg-[black] text-[white] px-4 py-4 rounded-full"
