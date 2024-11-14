@@ -1,5 +1,6 @@
 import React from "react";
 import myImage from "../assets/images/cover.jpg";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
@@ -10,9 +11,11 @@ function Hero() {
           <h1 className="text-[50px] py-7 capitalize">
             Bring life to every room
           </h1>
-          <button className=" border-2 bg-[white] text-[black] border-white rounded-full px-5 py-3 hover:opacity-80">
-            Shop Now
-          </button>
+          <Link to={"/products"}>
+            <button className=" border-2 bg-[white] text-[black] border-white rounded-full px-5 py-3 hover:opacity-80">
+              Shop Now
+            </button>
+          </Link>
         </div>
       </div>
     </>

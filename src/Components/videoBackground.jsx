@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Collectioncard from "./Collectioncard";
 // import backgroundVideo from "../assets/images/backG.webm";
 
 function VideoBackground() {
@@ -10,9 +12,11 @@ function VideoBackground() {
         <p className="text-lg font-semibold">
           Experience the art of living with furniture Crafted to Last!{" "}
         </p>
-        <button className="bg-[white] text-[black] px-20 py-3 rounded-3xl m-6 text-lg font-semibold">
-          Discover
-        </button>
+        <Link to={"/Collections"}>
+          <button className="bg-[white] text-[black] px-20 py-3 rounded-3xl m-6 text-lg font-semibold">
+            Discover
+          </button>
+        </Link>
       </div>
 
       <video

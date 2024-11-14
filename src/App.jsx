@@ -7,7 +7,7 @@ import SingleProduct from "./Components/Pages/Single-Product";
 import CartPage from "./Components/Pages/CartPage";
 import FaqPage from "./Components/Pages/FaqPage";
 import { CartProvider } from "react-use-cart";
-import CheckOutPage from "./Components/Pages/CheckOutPage";
+import Collections from "./Components/Collections";
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/faqs" element={<FaqPage />} />
           <Route path="/products" element={<Products />} />
-          <Route path="/CheckoutPage" element={<CheckOutPage />} />
+          <Route path="/collections" element={<Collections />} />
         </Routes>
       </Router>
     </CartProvider>
