@@ -5,7 +5,6 @@ import { FaRegHeart } from "react-icons/fa6";
 import { FiShoppingCart } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import { useCart } from "react-use-cart";
-import { CartContext } from "../context/CartContext";
 
 function Navbar() {
   const { totalItems } = useCart();
