@@ -1,5 +1,4 @@
 import React from "react";
-import myImage from "../assets/images/cover.jpg";
 import { Link } from "react-router-dom";
 
 function Hero() {
