@@ -2,14 +2,12 @@ import React from "react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import CartItemCard from "../Cart-ItemCard";
-
+import { Link } from "react-router-dom";
 import { useCart } from "react-use-cart";
 
 function CartPage() {
   const { items } = useCart();
-  const handleCheckout = () => {
-    alert("You will be redirected to the checkout page ");
-  };
+  const handleCheckout = () => {};
   return (
     <div className="pt-28">
       <Navbar />
@@ -48,12 +46,14 @@ function CartPage() {
         ))}
       </div>
 
-      <button
-        onClick={handleCheckout}
-        className="item-center mx-auto bg-[black] text-[white] flex py-3.5 px-10 rounded-full "
-      >
-        CHECK OUT
-      </button>
+      <Link to={"/Checkout"}>
+        <button
+          onClick={handleCheckout}
+          className="item-center mx-auto bg-[black] text-[white] flex py-3.5 px-10 rounded-full "
+        >
+          CHECK OUT
+        </button>
+      </Link>
 
       <Footer />
     </div>

@@ -8,6 +8,7 @@ import CartPage from "./Components/Pages/CartPage";
 import FaqPage from "./Components/Pages/FaqPage";
 import { CartProvider } from "react-use-cart";
 import Collections from "./Components/Collections";
+import Checkout from "./Components/Pages/checkout";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/faqs" element={<FaqPage />} />
           <Route path="/products" element={<Products />} />
           <Route path="/collections" element={<Collections />} />
+          <Route path="/checkout" element={<Checkout />} />
         </Routes>
       </Router>
     </CartProvider>

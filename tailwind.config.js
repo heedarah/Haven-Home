@@ -9,9 +9,11 @@ export default {
     },
 
     extend: {
-      // textColor: {"visited"}
-      backgroundColor: ["active", "disabled", "checked"],
-      borderColor: ["active", "disabled", "checked", "focused"],
+      backgroundImage: {
+        'hero-image': "url('/img"
+      }
+      // backgroundColor: ["active", "disabled", "checked"],
+      // borderColor: ["active", "disabled", "checked", "focused"],
     },
   },
   plugins: [],
