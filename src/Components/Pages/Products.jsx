@@ -1,6 +1,6 @@
 import { useSearchParams } from "react-router-dom";
 import Navbar from "../Navbar";
-import ProductCard from "../Productcard";
+import ProductCard from "../ProductCard";
 import Footer from "../Footer";
 import Collections from "../Collections";
 
