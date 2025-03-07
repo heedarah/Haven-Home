@@ -8,7 +8,7 @@ import CartPage from "./Components/Pages/CartPage";
 import FaqPage from "./Components/Pages/FaqPage";
 import { CartProvider } from "react-use-cart";
 import Collections from "./Components/Collections";
-import Checkout from "./Components/Pages/checkout";
+import Checkout from "./Components/Pages/Checkout";
 
 function App() {
   return (
