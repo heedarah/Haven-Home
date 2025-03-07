@@ -11,6 +11,7 @@ function CartItemCard({ image, quantity, total, id }) {
       <p>{quantity}</p>
 
       <p>
+        &#8358;
         {Number(total).toLocaleString({
           style: "currency",
           currency: "NGN",
